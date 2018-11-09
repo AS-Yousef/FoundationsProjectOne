@@ -21,11 +21,9 @@ def print_menu():
     Print the items in the menu dictionary.
     """
 
-    # your code goes here!
-
     print ("Our menu: " )
-    for item in menu:
-        print ("- '%s' (KD %s)" %(item, menu[item]))
+    for order in menu:
+        print ("- '%s' (KD %s)" %(order, menu[order]))
     print()
 
 def print_originals():
@@ -34,8 +32,8 @@ def print_originals():
     """
     print("Our original flavor cupcakes (KD %s each):" % original_price) 
     # your code goes here!
-    for item in original_flavors:
-        print ("- '%s'" % item)
+    for order in original_flavors:
+        print ("- '%s'" % order)
     print()
 
 def print_signatures():
@@ -45,8 +43,8 @@ def print_signatures():
     print("Our signature flavor cupcake (KD %s each):" % signature_price)
     
     # your code goes here!    
-    for item in signature_flavors:
-        print ("- '%s'" % item)
+    for order in signature_flavors:
+        print ("- '%s'" % order)
     print()
 
 def is_valid_order(order):
@@ -73,7 +71,7 @@ def get_order():
         else:
             print("Enter the exact spelling of the item you want.")
     
-    order = input()
+        order = input()
 
     return order_list
 
